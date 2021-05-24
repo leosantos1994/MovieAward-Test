@@ -1,0 +1,20 @@
+﻿@page
+@model ResultModel
+
+<div class="text-center">
+    <h1 class="display-4">Visualizar resultados</h1>
+    <div class="mt-5">
+        <h4>Produtor com maior intervalo entre dois premios</h4>
+
+        <p>Produtor dois premios mais rápido</p>
+       => @Model.GotConsecutiveWinnerProducer
+        <p>Adicione a lista de indicados</p>
+       => @Model.MaxDifference
+
+        <div class="pt-5">
+            <form method="post" enctype="multipart/form-data">
+                <input type="submit" value="Resetar dados da base">
+            </form>
+        </div>
+    </div>
+</div>
